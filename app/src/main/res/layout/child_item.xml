@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/child_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:failureImage="@mipmap/ic_launcher"
+                app:placeholderImage="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/child_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="16dp"
+                android:text="¥40.00" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/iv_del"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/text"
+                    android:text="－"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/number"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="2dp"
+                    android:text="1" />
+
+                <TextView
+                    android:id="@+id/iv_add"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/text"
+                    android:text="＋"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:text="删除" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
